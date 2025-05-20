@@ -36,7 +36,7 @@ This repository contains a solution to the Seals AI Take-Home Challenge: **Compa
    - Scores its confidence and logs its reasoning.
    - If confidence is low, retries with a refined prompt or flags for human review.
 4. **Comparison:** After both documents are processed, the agent generates a comparative summary, highlighting key differences, overlaps, and gaps.
-5. **Output:** Results are saved as structured JSON (and optionally Markdown), including all per-paragraph analyses, the comparative summary, and meta-logs.
+5. **Output:** Results are saved as structured JSON and Markdown, including all per-paragraph analyses, the comparative summary, and meta-logs.
 
 ---
 
@@ -66,9 +66,9 @@ pip install -r requirements.txt
 #### CLI
 
 ```bash
-PYTHONPATH=. poetry run python scripts/cli.py input/ley1.pdf input/ley2.pdf --output output/final_result.json
+PYTHONPATH=. poetry run python scripts/cli.py input/ley1.pdf input/ley2.pdf
 # or
-PYTHONPATH=. python scripts/cli.py input/ley1.pdf input/ley2.pdf --output output/final_result.json
+PYTHONPATH=. python scripts/cli.py input/ley1.pdf input/ley2.pdf
 ```
 
 #### Web Interface (Optional)
