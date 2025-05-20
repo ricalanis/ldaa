@@ -43,7 +43,7 @@ The core workflow is defined in `ldaa/agents/graph.py` using LangGraph's `StateG
 9. **Human-in-the-Loop Nodes**: If confidence is low or errors occur, the workflow can pause for human review and intervention.
 10. **Vector Store Integration**: Segments and analyses can be stored in FAISS for semantic search and future retrieval.
 
-´´´
+```
 [Ingest Documents]
          |
          v
@@ -80,7 +80,7 @@ The core workflow is defined in `ldaa/agents/graph.py` using LangGraph's `StateG
          |
          v
         END
-´´´
+```
 
 Conditional routers in the graph enable dynamic control flow, supporting retries, escalation, and human-in-the-loop as required by the agentic paradigm.
 
