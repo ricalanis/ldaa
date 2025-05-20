@@ -1,0 +1,16 @@
+{
+    "python_version": "3.12",
+    "dependencies": [
+      "."
+    ],
+    "graphs": {
+      "main": "./ldaa/agents/graph.py:graph"
+    },
+    "store": {
+      "index": {
+        "embed": "openai:text-embedding-3-small",
+        "dims": 1536
+      }
+    },
+    "env": ".env"
+  }

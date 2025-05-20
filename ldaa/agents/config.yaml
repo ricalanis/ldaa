@@ -1,0 +1,21 @@
+# LDAA System Configuration
+
+model: "gpt-4o"
+confidence_threshold: 0.7
+taxonomy:
+  - ethics
+  - governance
+  - compliance
+  - human_rights
+  - risk_management
+  - technical_standards
+  - data_protection
+  - innovation
+  - public_administration
+  - sectoral_regulation
+  - consumer_protection
+  - intellectual_property
+  - cybersecurity
+  - environmental_impact
+  - general_provisions
+output_format: "json" 
