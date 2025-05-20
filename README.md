@@ -98,21 +98,19 @@ PYTHONPATH=. streamlit run scripts/app.py
 
 ## Example Output
 
-Each paragraph is analyzed as follows:
+Each segment is analyzed as follows:
 
 ```json
 {
-  "paragraph": "The initiative establishes that AI systems must operate under principles of transparency and accountability.",
-  "summary": "The law proposes that AI systems follow principles of transparency and responsibility.",
-  "category": "ethics",
-  "pros": ["Encourages accountability and trust"],
-  "cons": ["May lack clarity on enforcement mechanisms"],
-  "confidence": 0.92,
-  "meta_log": {
-    "reasoning": "Clear mention of transparency/accountability aligns with ethics; pro/con based on standard legal analysis.",
-    "prompt_version": 2,
-    "retry_count": 0
-  }
+  "segment": "El suscrito, Dr. Ricardo Monreal Ávila, senador de la República...",
+  "summary": "Senator Ricardo Monreal Ávila from the Morena Party submits a legislative proposal...",
+  "category": "sectoral_regulation",
+  "pros": ["Proactively addresses the regulation of emerging technology."],
+  "cons": ["Lacks specific details on the content of the proposal."],
+  "confidence": 0.85,
+  "reasoning": "The segment provides a clear context of legislative activity concerning AI regulation, but lacks substantive detail on the initiative's content, affecting completeness.",
+  "meta": {},
+  "success": true
 }
 ```
 The final comparative summary provides a structured overview of differences, focus areas, and gaps. See [results/OUTPUT.md](results/OUTPUT.md) for more details on the output format. For a deeper understanding of the system's architecture and design choices, refer to [results/TECHNICAL.md](results/TECHNICAL.md). For evaluation criteria and scoring guidelines, see [results/REVIEW.md](results/REVIEW.md).
